@@ -17,12 +17,14 @@ func NegotiateFormat(negotiators map[string](encoder.Encoder)) martini.Handler {
 
   return func(r *http.Request, c martini.Context, w http.ResponseWriter) {
     if len(r.Header["Accept"]) == 0 {
+      w.WriteHeader(http.StatusNotAcceptable);
       return
     }
 
     alternative, err := negotiation.NegotiateAccept(r.Header["Accept"][0], alternatives)
 
     if err != nil || negotiators[alternative.Value] == nil {
+      w.WriteHeader(http.StatusNotAcceptable);
       return
     }
 

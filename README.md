@@ -56,7 +56,6 @@ func main() {
 
 ## ToDo
 
-  * handle errors (no encoder found)
   * provide tools to negotiate other things (language for instance)
   * write tests
 
