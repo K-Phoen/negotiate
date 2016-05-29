@@ -6,6 +6,12 @@ Content negotiation middleware for Martini.
 It's a simple wrapper to the [negotiation library](https://github.com/K-Phoen/negotiation) and
 [martini-contrib/encoder](https://github.com/martini-contrib/encoder) service.
 
+## Status
+
+This project is **DEPRECATED** and should NOT be used. 
+
+If someone magically appears and wants to maintain this project, I'll gladly give access to this repository.
+
 ## Usage
 
 Here is a ready to use example:
